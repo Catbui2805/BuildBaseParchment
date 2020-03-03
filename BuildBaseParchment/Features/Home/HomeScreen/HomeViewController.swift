@@ -26,6 +26,13 @@ class HomeViewController: UIViewController {
         return bt
     }()
     
+    let btParchment: UIButton = {
+        let bt = UIButton()
+        bt.setTitle("Parchment", for: .normal)
+        bt.backgroundColor = .lightGray
+        return bt
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -38,9 +45,20 @@ class HomeViewController: UIViewController {
         bt.frame = .init(x: 0, y: 200, width: view.frame.width, height: 44)
         bt.addTarget(self, action: #selector(btAction), for: .touchUpInside)
         
+        view.addSubview(btParchment)
+        btParchment.frame = .init(x: 0, y: 340, width: view.frame.width, height: 44)
+        btParchment.addTarget(self, action: #selector(btParchmentAction), for: .touchUpInside)
+        
     }
     
     @objc func btAction() {
+        let category = CategoryViewController()
+        category.hidesBottomBarWhenPushed = true
+        category.title = "Category"
+        navigationController?.pushViewController(category, animated: true)
+    }
+    
+    @objc func btParchmentAction() {
         let category = CategoryViewController()
         category.hidesBottomBarWhenPushed = true
         category.title = "Category"

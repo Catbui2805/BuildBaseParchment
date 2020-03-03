@@ -19,6 +19,9 @@
 		F5548AFB240E424B00388CD4 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5548AFA240E424B00388CD4 /* CategoryCell.swift */; };
 		F5548AFE240E466100388CD4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5548AFD240E466100388CD4 /* Constants.swift */; };
 		F5548B00240E46D200388CD4 /* RatioScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5548AFF240E46D200388CD4 /* RatioScreenManager.swift */; };
+		F5548B03240E4AD700388CD4 /* BaseParchmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5548B02240E4AD700388CD4 /* BaseParchmentViewController.swift */; };
+		F5548B06240E50D400388CD4 /* BaseParchmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5548B05240E50D400388CD4 /* BaseParchmentModel.swift */; };
+		F5548B08240E532C00388CD4 /* BaseParchmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5548B07240E532C00388CD4 /* BaseParchmentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		F5548AFA240E424B00388CD4 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		F5548AFD240E466100388CD4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F5548AFF240E46D200388CD4 /* RatioScreenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatioScreenManager.swift; sourceTree = "<group>"; };
+		F5548B02240E4AD700388CD4 /* BaseParchmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseParchmentViewController.swift; sourceTree = "<group>"; };
+		F5548B05240E50D400388CD4 /* BaseParchmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseParchmentModel.swift; sourceTree = "<group>"; };
+		F5548B07240E532C00388CD4 /* BaseParchmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseParchmentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,10 +186,21 @@
 		F5548AFC240E462700388CD4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F5548B01240E480C00388CD4 /* ParchmentView */,
 				F5548AFF240E46D200388CD4 /* RatioScreenManager.swift */,
 				F5548AFD240E466100388CD4 /* Constants.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		F5548B01240E480C00388CD4 /* ParchmentView */ = {
+			isa = PBXGroup;
+			children = (
+				F5548B02240E4AD700388CD4 /* BaseParchmentViewController.swift */,
+				F5548B05240E50D400388CD4 /* BaseParchmentModel.swift */,
+				F5548B07240E532C00388CD4 /* BaseParchmentViewModel.swift */,
+			);
+			path = ParchmentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,10 +319,13 @@
 			files = (
 				F5548AF4240E2F7700388CD4 /* CategoryViewController.swift in Sources */,
 				F5548AD6240E0DF300388CD4 /* AppDelegate.swift in Sources */,
+				F5548B06240E50D400388CD4 /* BaseParchmentModel.swift in Sources */,
+				F5548B03240E4AD700388CD4 /* BaseParchmentViewController.swift in Sources */,
 				F5548AD8240E0DF300388CD4 /* SceneDelegate.swift in Sources */,
 				F5548AFB240E424B00388CD4 /* CategoryCell.swift in Sources */,
 				F5548AF6240E321F00388CD4 /* CategoryModel.swift in Sources */,
 				F5548AF8240E40F000388CD4 /* CategoryViewModel.swift in Sources */,
+				F5548B08240E532C00388CD4 /* BaseParchmentViewModel.swift in Sources */,
 				F5548B00240E46D200388CD4 /* RatioScreenManager.swift in Sources */,
 				F5548AF0240E116400388CD4 /* HomeViewController.swift in Sources */,
 				F5548AFE240E466100388CD4 /* Constants.swift in Sources */,
